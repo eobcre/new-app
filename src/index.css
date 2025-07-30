@@ -1,1 +1,5 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme {
+  --color-main: #4b4b4b;
+}
