@@ -1,7 +1,11 @@
+import HeroSection from './pages/HeroSection';
+
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <HeroSection />
+    </div>
+  );
+};
 
-export default App
+export default App;
