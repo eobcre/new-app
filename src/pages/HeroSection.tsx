@@ -6,17 +6,13 @@ import HeroModal from '../components/modal/HeroModal';
 const HeroSection = () => {
   const [openHeroModal, setOpenHeroModal] = useState(false);
 
-  const onClickHeroModal = () => {
-    setOpenHeroModal(true);
-  };
-
   return (
     <div>
       <div className='flex'>
-        <Header onClickHeroModal={onClickHeroModal} />
+        <Header onOpen={() => setOpenHeroModal(true)} />
         <img src={HeroImage} alt='Image' className='object-cover w-full h-screen' />
       </div>
-      {openHeroModal && <HeroModal />}
+      <HeroModal isOpen={openHeroModal} onClose={() => setOpenHeroModal(false)} />
     </div>
   );
 };

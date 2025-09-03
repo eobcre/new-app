@@ -3,10 +3,10 @@ import Logo from '../assets/logo/logo.svg';
 import Menu from '../assets/icons/menu.svg';
 
 interface HeaderProps {
-  onClickHeroModal: () => void;
+  onOpen: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ onClickHeroModal }) => {
+const Header: React.FC<HeaderProps> = ({ onOpen }) => {
   return (
     <header className='flex flex-col items-center justify-between w-28 h-screen'>
       <div className='flex flex-col justify-between h-full'>
@@ -14,8 +14,8 @@ const Header: React.FC<HeaderProps> = ({ onClickHeroModal }) => {
           <img src={Logo} alt='Logo' width={50} height={50} className='pt-3 pb-1' />
           <p className='text-main text-lg font-main'>OIKAZE</p>
         </div>
-        <div className='flex justify-center pb-8'>
-          <Button onClick={onClickHeroModal} className='w-[28px] h-[28px]'>
+        <div className='flex justify-center hover:opacity-70 pb-8'>
+          <Button onClick={onOpen} className='cursor-pointer w-[28px] h-[28px]'>
             <img src={Menu} alt='Menu' />
           </Button>
         </div>
