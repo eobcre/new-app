@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ onOpen }) => {
       <div className='flex flex-col justify-between h-full'>
         <div className='flex flex-col items-center'>
           <img src={Logo} alt='Logo' width={50} height={50} className='pt-3 pb-1' />
-          <p className='text-main text-lg font-main'>OIKAZE</p>
+          <p className='text-main text-lg font-main'>UMAISU</p>
         </div>
         <div className='flex justify-center hover:opacity-70 pb-8'>
           <Button onClick={onOpen} className='cursor-pointer w-[28px] h-[28px]'>
@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ onOpen }) => {
         </div>
       </div>
       <div className='flex justify-center items-center bg-main w-28 h-28'>
-        <p className='text-white font-main'>RESERVATION</p>
+        <p className='text-white font-main cursor-pointer'>RESERVATION</p>
       </div>
     </header>
   );
