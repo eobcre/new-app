@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from '../components/Header';
-import HeroImage from '../assets/hero_image.jpg';
-import SubImage from '../assets/sub_image.jpg';
+import HeroImage from '../assets/bg/hero_bg.jpg';
+import SubImage from '../assets/bg/sub_bg.jpg';
 import HeroModal from '../components/modal/HeroModal';
 
 const HeroSection = () => {
